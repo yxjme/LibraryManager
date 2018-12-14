@@ -1,0 +1,25 @@
+首先第一步  在setting.gradle中的配置
+include ':app', ':library'
+/*导入依赖库*/
+include ':melibrary'
+/*导入依赖库路径*/
+project(':melibrary').projectDir = new File(settingsDir, '../LibraryManager/melibrary')
+
+/*导入依赖库*/
+include ':pickerview'
+/*导入依赖库路径*/
+project(':pickerview').projectDir = new File(settingsDir, '../LibraryManager/pickerview')
+
+/*导入依赖库*/
+include ':pulltorefresh'
+/*导入依赖库路径*/
+project(':pulltorefresh').projectDir = new File(settingsDir, '../LibraryManager/pulltorefresh')
+
+
+其次第二步骤 在 app目录下的build.gradle中配置
+dependencies {
+    implementation project(':library')
+    implementation project(':melibrary')
+    implementation project(':pulltorefresh')
+}
+

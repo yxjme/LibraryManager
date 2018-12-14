@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /** rxJava_retrofit */
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit-converters:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit-adapters:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    /*图片下载框架*/
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+    /*侧滑删除*/
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    implementation 'com.android.support:support-v4:27+'
+    implementation 'com.android.support:recyclerview-v7:27+'
+    /*取色工具*/
+    implementation 'com.android.support:palette-v7:27+'
+    implementation files('libs/zxing.jar')
+}

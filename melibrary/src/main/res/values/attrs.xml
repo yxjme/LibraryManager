@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable  name="TitleBar">
+        <attr name="title" format="string"/>
+        <attr name="titleColor" format="color"></attr>
+        <attr name="backIcon" format="reference"></attr>
+        <attr name="isBackVisible" format="boolean"></attr>
+        <attr name="isRightVisible" format="boolean"></attr>
+        <attr name="rightText" format="string"></attr>
+        <attr name="rightTextColor" format="color"></attr>
+        <attr name="rightTextSize" format="dimension"></attr>
+        <attr name="backGroundColor" format="color"></attr>
+        <attr name="isDetail" format="boolean"></attr>
+        <attr name="isVisibilityIocn" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <!--流布局-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--圆形-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RequestStateView">
+        <attr name="noDataImg" format="reference"></attr>
+        <attr name="nothingText" format="string"/>
+        <attr name="state" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="loading" value="1"/>
+            <enum name="nothing" value="2" />
+            <enum name="network" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
