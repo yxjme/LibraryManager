@@ -14,7 +14,6 @@ import java.util.Set;
 public class SharedPreferencesUtil {
 
 
-
     private static final String  NAME="DATA";
 
     /**
