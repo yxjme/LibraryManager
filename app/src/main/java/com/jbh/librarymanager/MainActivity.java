@@ -11,21 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+
+import com.distributiongoods.jbh.verticalscrollviewlibrary.CycleView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-
     private RecyclerView mRecyclerView;
 
     private List<String> list=new ArrayList<>();
 
     private MyAdapter adapter;
-
-
 
 
 
@@ -50,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         CycleView mCycleView =   findViewById(R.id.mCycleView);
 
 //        List<String> strings=new ArrayList<>();
@@ -58,11 +57,12 @@ public class MainActivity extends AppCompatActivity {
 //        strings.add("的空间功能水电费 ");
 //        mCycleView.setDataString(strings);
 
-        List<View> views=new ArrayList<>();
         for (int i=0;i<5 ; i++){
             View view=LayoutInflater.from(this).inflate(R.layout.text_layout,null);
             mCycleView.addView(view);
         }
+
+
         mCycleView.setAutoStart(true);
     }
 

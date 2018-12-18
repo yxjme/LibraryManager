@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.jbh.librarymanager.MainActivity">
 
-    <com.jbh.librarymanager.CycleView
+    <com.distributiongoods.jbh.verticalscrollviewlibrary.CycleView
         android:id="@+id/mCycleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:flipInterval="4000">
-    </com.jbh.librarymanager.CycleView>
+    </com.distributiongoods.jbh.verticalscrollviewlibrary.CycleView>
 
     <Button
         android:id="@+id/btn_add"

@@ -1,5 +1,4 @@
-package com.jbh.librarymanager;
-
+package com.distributiongoods.jbh.verticalscrollviewlibrary;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
@@ -8,7 +7,6 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
-
 import java.util.List;
 
 /**
@@ -20,6 +18,7 @@ public class CycleView extends ViewFlipper {
     private int inAnim = R.anim.anim_in;
     private int outAnim = R.anim.anim_out;
     private int itemViewCount;
+    /*切换的间隔时间*/
     private int flipInterval = 3000;
 
     public CycleView(Context context) {
@@ -37,19 +36,17 @@ public class CycleView extends ViewFlipper {
         int count=array.getIndexCount();
         for (int i=0;i<count ; i++){
             int attr=array.getIndex(i);
-            switch (attr){
-                case R.styleable.CycleView_inAnim:
-                    inAnim = array.getInt(attr,android.R.anim.slide_in_left);
-                    setInAnimation(AnimationUtils.loadAnimation(context,inAnim));
-                    break;
-                case R.styleable.CycleView_outAnim:
-                    outAnim = array.getInt(attr,android.R.anim.slide_out_right);
-                    setOutAnimation(AnimationUtils.loadAnimation(context,outAnim));
-                    break;
-                case R.styleable.CycleView_flipInterval:
-                    flipInterval=array.getInt(attr,3000);
-                    setFlipInterval(flipInterval);
-                    break;
+            if (attr == R.styleable.CycleView_inAnim) {
+                inAnim = array.getInt(attr, android.R.anim.slide_in_left);
+                setInAnimation(AnimationUtils.loadAnimation(context, inAnim));
+
+            } else if (attr == R.styleable.CycleView_outAnim) {
+                outAnim = array.getInt(attr, android.R.anim.slide_out_right);
+                setOutAnimation(AnimationUtils.loadAnimation(context, outAnim));
+
+            } else if (attr == R.styleable.CycleView_flipInterval) {
+                flipInterval = array.getInt(attr, 3000);
+                setFlipInterval(flipInterval);
             }
         }
         array.recycle();

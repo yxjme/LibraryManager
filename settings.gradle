@@ -1,1 +1,1 @@
-include ':app', ':melibrary', ':pulltorefresh', ':pickerview'
+include ':app', ':melibrary', ':pulltorefresh', ':pickerview', ':verticalscrollviewlibrary'

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/melibrary/melibrary.iml" filepath="$PROJECT_DIR$/melibrary/melibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/verticalscrollviewlibrary/verticalscrollviewlibrary.iml" filepath="$PROJECT_DIR$/verticalscrollviewlibrary/verticalscrollviewlibrary.iml" />
     </modules>
   </component>
 </project>

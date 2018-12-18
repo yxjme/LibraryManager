@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/melibrary" />
             <option value="$PROJECT_DIR$/pickerview" />
             <option value="$PROJECT_DIR$/pulltorefresh" />
+            <option value="$PROJECT_DIR$/verticalscrollviewlibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
